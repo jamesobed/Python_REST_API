@@ -1,0 +1,11 @@
+python3 -m venv .venv
+ . .venv/bin/activate
+ pip install django
+  pip install djangorestframework
+django-admin startproject user .
+python manage.py runserver
+
+python manage.py migrate
+
+python manage.py makemigrations user
+python manage.py migrate

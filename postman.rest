@@ -1,0 +1,33 @@
+### get all users records
+GET http://127.0.0.1:8000/user/
+### get one user record
+GET http://127.0.0.1:8000/user/3
+
+### delete one user record
+DELETE http://127.0.0.1:8000/user/4
+
+### create new user record
+POST http://127.0.0.1:8000/user/
+Content-Type: application/json
+
+{
+    "name": "Wale Mikrotic",
+    "password": "1234",
+    "email": "wale@gmail.com",
+    "age": 23,
+    "phone": "08012345678",
+    "address": "No 189, Lagos Road, Oyo"
+}
+### update a user record
+PuT http://127.0.0.1:8000/user/4
+Content-Type: application/json
+
+{
+    "name": "Mukaila Mayowa",
+    "id":3,
+    "password": "1234",
+    "email": "mukaila.m@gmail.com",
+    "age": 23,
+    "phone": "09012345678",
+    "address": "No 1, Lagos Street, Abeokuta"
+}
